@@ -5,16 +5,7 @@
  */
 package BaseDeDatos;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-/**
- *
- * @author Carlos
- */
-public class Conexion {
-    import java.sql.*;
+import java.sql.*;
 
 public class Conexion {
 	
@@ -77,6 +68,4 @@ public class Conexion {
 	public String getUser(){
 		return user;
 	}
-}
-    
 }
