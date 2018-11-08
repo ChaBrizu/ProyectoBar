@@ -21,5 +21,23 @@ namespace ProyectoBar
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string admin = "Rafa";
+            string contra = "1234";
+
+            if(txtAdmin.Text == admin && txtContra.Text == contra)
+            {
+                this.Hide();
+                Form2 frm = new Form2();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
     }
 }
