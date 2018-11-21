@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoBar.Properties
+namespace Punto_de_ventas.Properties
 {
 
 

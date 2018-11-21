@@ -8,20 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoBar
+namespace Punto_de_ventas
 {
-    public partial class Form3 : Form
+    public partial class Form1 : Form
     {
-        public Form3()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Config_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form2 frm = new Form2();
-            frm.Show();
+
+        }
+
+        private void button_Ventas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
