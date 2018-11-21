@@ -5,9 +5,9 @@
         <group>
             <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/BaseDeDatos/DeleteBD.java</file>
             <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/BaseDeDatos/InsertBD.java</file>
-            <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/BaseDeDatos/UpdateBD.java</file>
             <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/BaseDeDatos/InterfazBD.java</file>
             <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/BaseDeDatos/Conexion.java</file>
+            <file>file:/C:/Users/Carlos/Documents/GitHub/ProyectoBar/WebServiceBar/src/java/WSBar/WSBar.java</file>
         </group>
     </open-files>
 </project-private>

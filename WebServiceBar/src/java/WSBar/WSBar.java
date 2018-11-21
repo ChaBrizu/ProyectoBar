@@ -16,10 +16,7 @@ import BaseDeDatos.*;
  */
 @WebService(serviceName = "WSBar")
 public class WSBar {
-
-    /**
-     * This is a sample web service operation
-     */
+    
     @WebMethod(operationName = "insert")
     public String insert(@WebParam(name = "strTabla") String strTabla, @WebParam(name = "strDatos") String strDatos) {
         InterfazBD obj;

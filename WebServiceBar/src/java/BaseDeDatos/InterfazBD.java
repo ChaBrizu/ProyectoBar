@@ -6,7 +6,8 @@
 package BaseDeDatos;
 
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -24,7 +25,7 @@ public abstract class InterfazBD {
     protected Conexion conexion;
     
     public InterfazBD() {
-            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/punto_venta", "root");
+            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/monkeys_bar", "root");
     }
     
     public abstract String consultaBd();
