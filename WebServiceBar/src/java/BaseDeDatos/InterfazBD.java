@@ -6,8 +6,6 @@
 package BaseDeDatos;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -25,7 +23,7 @@ public abstract class InterfazBD {
     protected Conexion conexion;
     
     public InterfazBD() {
-            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/monkeys_bar", "root");
+            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/prueba_bar", "root");
     }
     
     public abstract String consultaBd();

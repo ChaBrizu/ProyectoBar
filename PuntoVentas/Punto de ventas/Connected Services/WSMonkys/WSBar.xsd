@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WSBar/" targetNamespace="http://WSBar/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="delete" type="tns:delete" />
+  <xs:element name="deleteResponse" type="tns:deleteResponse" />
+  <xs:element name="insert" type="tns:insert" />
+  <xs:element name="insertResponse" type="tns:insertResponse" />
+  <xs:element name="selectLogin" type="tns:selectLogin" />
+  <xs:element name="selectLoginResponse" type="tns:selectLoginResponse" />
+  <xs:element name="update" type="tns:update" />
+  <xs:element name="updateResponse" type="tns:updateResponse" />
+  <xs:complexType name="selectLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strCondicion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectLoginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strTabla" type="xs:string" />
+      <xs:element minOccurs="0" name="strDatos" type="xs:string" />
+      <xs:element minOccurs="0" name="strCondicion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="update">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strTabla" type="xs:string" />
+      <xs:element minOccurs="0" name="strDatos" type="xs:string" />
+      <xs:element minOccurs="0" name="strCondicion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insert">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strTabla" type="xs:string" />
+      <xs:element minOccurs="0" name="strDatos" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
