@@ -40,9 +40,8 @@
             // 
             this.tbx_usuario.Location = new System.Drawing.Point(13, 91);
             this.tbx_usuario.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_usuario.Multiline = true;
             this.tbx_usuario.Name = "tbx_usuario";
-            this.tbx_usuario.Size = new System.Drawing.Size(231, 30);
+            this.tbx_usuario.Size = new System.Drawing.Size(231, 22);
             this.tbx_usuario.TabIndex = 13;
             // 
             // label22
@@ -74,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(80, 125);
+            this.label1.Location = new System.Drawing.Point(83, 117);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 20);
@@ -83,19 +82,18 @@
             // 
             // tbx_pass
             // 
-            this.tbx_pass.Location = new System.Drawing.Point(13, 149);
+            this.tbx_pass.Location = new System.Drawing.Point(13, 141);
             this.tbx_pass.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_pass.Multiline = true;
             this.tbx_pass.Name = "tbx_pass";
             this.tbx_pass.PasswordChar = '*';
-            this.tbx_pass.Size = new System.Drawing.Size(231, 30);
+            this.tbx_pass.Size = new System.Drawing.Size(231, 22);
             this.tbx_pass.TabIndex = 34;
             // 
             // button_BuscarProducto
             // 
             this.button_BuscarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_BuscarProducto.ForeColor = System.Drawing.Color.SteelBlue;
-            this.button_BuscarProducto.Location = new System.Drawing.Point(57, 187);
+            this.button_BuscarProducto.Location = new System.Drawing.Point(59, 171);
             this.button_BuscarProducto.Margin = new System.Windows.Forms.Padding(4);
             this.button_BuscarProducto.Name = "button_BuscarProducto";
             this.button_BuscarProducto.Size = new System.Drawing.Size(141, 28);
@@ -108,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 224);
+            this.ClientSize = new System.Drawing.Size(257, 224);
             this.Controls.Add(this.button_BuscarProducto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbx_pass);

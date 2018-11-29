@@ -25,7 +25,7 @@ public class SelectLogin extends InterfazBD {
         
         try {
                 executer = conexion.ObtenerConexion().createStatement();
-                dataSet = executer.executeQuery("SELECT * FROM `usuario` WHERE nombre='" + condicion + "'" + " LIMIT 1;");
+                dataSet = executer.executeQuery("SELECT nombre FROM `usuario` WHERE nombre='" + condicion + "'" + " LIMIT 1;");
                 if(dataSet.next() == false){
                     resultado = "Nombre de usuario o contraseña incorrectos";
                 }

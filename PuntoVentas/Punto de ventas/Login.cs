@@ -30,8 +30,8 @@ namespace Punto_de_ventas
                 {
                     MessageBox.Show(resultado, "Sesión iniciada!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Form1 obj = new Form1();
-                    obj.Show();
                     this.Hide();
+                    obj.Show();
                 }
                 else
                 {
