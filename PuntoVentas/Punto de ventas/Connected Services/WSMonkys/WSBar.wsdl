@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WSBar/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSBar" targetNamespace="http://WSBar/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebServiceBar/WSBar?xsd=1" namespace="http://WSBar/" />
+    </xsd:schema>
+  </types>
+  <message name="update">
+    <part name="parameters" element="tns:update" />
+  </message>
+  <message name="updateResponse">
+    <part name="parameters" element="tns:updateResponse" />
+  </message>
+  <message name="delete">
+    <part name="parameters" element="tns:delete" />
+  </message>
+  <message name="deleteResponse">
+    <part name="parameters" element="tns:deleteResponse" />
+  </message>
+  <message name="insert">
+    <part name="parameters" element="tns:insert" />
+  </message>
+  <message name="insertResponse">
+    <part name="parameters" element="tns:insertResponse" />
+  </message>
+  <message name="selectLogin">
+    <part name="parameters" element="tns:selectLogin" />
+  </message>
+  <message name="selectLoginResponse">
+    <part name="parameters" element="tns:selectLoginResponse" />
+  </message>
+  <portType name="WSBar">
+    <operation name="update">
+      <input wsam:Action="http://WSBar/WSBar/updateRequest" message="tns:update" />
+      <output wsam:Action="http://WSBar/WSBar/updateResponse" message="tns:updateResponse" />
+    </operation>
+    <operation name="delete">
+      <input wsam:Action="http://WSBar/WSBar/deleteRequest" message="tns:delete" />
+      <output wsam:Action="http://WSBar/WSBar/deleteResponse" message="tns:deleteResponse" />
+    </operation>
+    <operation name="insert">
+      <input wsam:Action="http://WSBar/WSBar/insertRequest" message="tns:insert" />
+      <output wsam:Action="http://WSBar/WSBar/insertResponse" message="tns:insertResponse" />
+    </operation>
+    <operation name="selectLogin">
+      <input wsam:Action="http://WSBar/WSBar/selectLoginRequest" message="tns:selectLogin" />
+      <output wsam:Action="http://WSBar/WSBar/selectLoginResponse" message="tns:selectLoginResponse" />
+    </operation>
+  </portType>
+  <binding name="WSBarPortBinding" type="tns:WSBar">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="update">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="delete">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insert">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="selectLogin">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSBar">
+    <port name="WSBarPort" binding="tns:WSBarPortBinding">
+      <soap:address location="http://localhost:8080/WebServiceBar/WSBar" />
+    </port>
+  </service>
+</definitions>

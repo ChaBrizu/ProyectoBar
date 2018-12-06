@@ -37,4 +37,11 @@ public class WSBar {
         obj= new DeleteBD(strTabla, strCondicion);
         return obj.consultaBd();
     }
+    
+    @WebMethod(operationName = "selectLogin")
+    public String selectLogin(@WebParam(name = "strCondicion") String strCondicion) {
+        InterfazBD obj;
+        obj= new SelectLogin(strCondicion);
+        return obj.consultaBd();
+    }
 }

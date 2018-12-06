@@ -34,7 +34,17 @@ public class Conexion {
 		catch (SQLException e) {
 			e.printStackTrace();
 		}
-			return null;		
+            return null;		
+	}
+        
+        public Connection CerrarConexion(){
+		try {
+			connection.close();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+            return null;		
 	}
 	
 	public void setDriver(String controlador){

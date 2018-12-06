@@ -31,5 +31,17 @@ namespace Punto_de_ventas
         {
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login obj = new Login();
+            this.Hide();
+            obj.Show();
+        }
     }
 }
