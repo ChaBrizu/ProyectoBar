@@ -260,3 +260,9 @@ paket-files/
 __pycache__/
 *.pyc
 /WebServiceBar/dist/
+/WSBarMonkys/nbproject/private/
+/WSBarMonkys/build/
+/WSBarMonkys/dist/
+/WSMonkysREST/nbproject/private/
+/WSMonkysREST/build/
+/WSMonkysREST/dist/
