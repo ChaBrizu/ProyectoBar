@@ -25,7 +25,7 @@ namespace Punto_de_ventas
                 String usuario = tbx_usuario.Text;
                 String pass = tbx_pass.Text;                
                 String strCondicion = usuario + "'" + " and password='" + pass;
-                String resultado = servicio.selectLogin(strCondicion);
+                String resultado = servicio.select(strCondicion);
                 if (resultado != "Nombre de usuario o contraseña incorrectos")
                 {
                     MessageBox.Show(resultado, "Sesión iniciada!", MessageBoxButtons.OK, MessageBoxIcon.Information);

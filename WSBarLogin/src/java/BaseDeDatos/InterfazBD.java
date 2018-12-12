@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package BaseDeDatos;
 
 import java.sql.*;
@@ -22,6 +27,14 @@ public abstract class InterfazBD {
     }
     
     public abstract String consultaBd();
+    
+    public void setTabla(String nombreTabla){
+        table=nombreTabla;
+    }
+    
+    public String getTabla(){
+        return table;
+    }
     
     public void setDatos(String strDatos){
         data=strDatos;

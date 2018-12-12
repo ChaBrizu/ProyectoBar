@@ -20,28 +20,30 @@ public class WSBar {
     @WebMethod(operationName = "insert")
     public String insert(@WebParam(name = "strTabla") String strTabla, @WebParam(name = "strDatos") String strDatos) {
         InterfazBD obj;
-        obj= new InsertBD(strDatos);
+        obj= new InsertBD(strTabla, strDatos);
         return obj.consultaBd();
     }
     
     @WebMethod(operationName = "update")
     public String update(@WebParam(name = "strTabla") String strTabla, @WebParam(name = "strDatos") String strDatos, @WebParam(name = "strCondicion") String strCondicion) {
         InterfazBD obj;
-        obj= new UpdateBD(strDatos, strCondicion);
+        obj= new UpdateBD(strTabla, strDatos, strCondicion);
         return obj.consultaBd();
     }
     
     @WebMethod(operationName = "delete")
     public String delete(@WebParam(name = "strTabla") String strTabla, @WebParam(name = "strDatos") String strDatos, @WebParam(name = "strCondicion") String strCondicion) {
         InterfazBD obj;
-        obj= new DeleteBD(strCondicion);
+        obj= new DeleteBD(strTabla, strCondicion);
         return obj.consultaBd();
     }
     
-    @WebMethod(operationName = "selectLogin")
-    public String selectLogin(@WebParam(name = "strCondicion") String strCondicion) {
+    @WebMethod(operationName = "select")
+    public String select(@WebParam(name = "strCondicion") String strCondicion) {
         InterfazBD obj;
-        obj= new SelectLogin(strCondicion);
+        obj= new SelectBD(strCondicion);
         return obj.consultaBd();
     }
+    
+    
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="644dc662-e8d0-4b67-9c5d-763bd4563fb9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="42cf9efc-be12-4c4b-8213-202a0c168583" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/WebServiceBar/WSBar?WSDL" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://desktop-sbe2f8s:8080/WSBarLogin/WSBar?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WSBar.wsdl" MetadataType="Wsdl" ID="e7082b73-5062-4d8c-8366-a7e2dd1d714d" SourceId="1" SourceUrl="http://localhost:8080/WebServiceBar/WSBar?WSDL" />
-    <MetadataFile FileName="WSBar.xsd" MetadataType="Schema" ID="4f7d8efb-9cd2-45b1-8945-a152bb67982e" SourceId="1" SourceUrl="http://localhost:8080/WebServiceBar/WSBar?xsd=1" />
+    <MetadataFile FileName="WSBar.xsd" MetadataType="Schema" ID="adc6a6cc-bc1b-4fee-a7e0-2ffd0c4edb46" SourceId="1" SourceUrl="http://desktop-sbe2f8s:8080/WSBarLogin/WSBar?xsd=1" />
+    <MetadataFile FileName="WSBar.wsdl" MetadataType="Wsdl" ID="7956bff2-e893-4c1d-b3b6-8f66062e64ec" SourceId="1" SourceUrl="http://desktop-sbe2f8s:8080/WSBarLogin/WSBar?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

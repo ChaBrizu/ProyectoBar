@@ -4,16 +4,16 @@
   <xs:element name="deleteResponse" type="tns:deleteResponse" />
   <xs:element name="insert" type="tns:insert" />
   <xs:element name="insertResponse" type="tns:insertResponse" />
-  <xs:element name="selectLogin" type="tns:selectLogin" />
-  <xs:element name="selectLoginResponse" type="tns:selectLoginResponse" />
+  <xs:element name="select" type="tns:select" />
+  <xs:element name="selectResponse" type="tns:selectResponse" />
   <xs:element name="update" type="tns:update" />
   <xs:element name="updateResponse" type="tns:updateResponse" />
-  <xs:complexType name="selectLogin">
+  <xs:complexType name="select">
     <xs:sequence>
       <xs:element minOccurs="0" name="strCondicion" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="selectLoginResponse">
+  <xs:complexType name="selectResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>

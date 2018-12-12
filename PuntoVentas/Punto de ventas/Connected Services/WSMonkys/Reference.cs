@@ -37,11 +37,11 @@ namespace Punto_de_ventas.WSMonkys {
         System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.insertResponse> insertAsync(Punto_de_ventas.WSMonkys.insertRequest request);
         
         // CODEGEN: Generating message contract since element name strCondicion from namespace  is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://WSBar/WSBar/selectLoginRequest", ReplyAction="http://WSBar/WSBar/selectLoginResponse")]
-        Punto_de_ventas.WSMonkys.selectLoginResponse selectLogin(Punto_de_ventas.WSMonkys.selectLoginRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://WSBar/WSBar/selectRequest", ReplyAction="http://WSBar/WSBar/selectResponse")]
+        Punto_de_ventas.WSMonkys.selectResponse select(Punto_de_ventas.WSMonkys.selectRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://WSBar/WSBar/selectLoginRequest", ReplyAction="http://WSBar/WSBar/selectLoginResponse")]
-        System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectLoginResponse> selectLoginAsync(Punto_de_ventas.WSMonkys.selectLoginRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://WSBar/WSBar/selectRequest", ReplyAction="http://WSBar/WSBar/selectResponse")]
+        System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectResponse> selectAsync(Punto_de_ventas.WSMonkys.selectRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -272,15 +272,15 @@ namespace Punto_de_ventas.WSMonkys {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class selectLoginRequest {
+    public partial class selectRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="selectLogin", Namespace="http://WSBar/", Order=0)]
-        public Punto_de_ventas.WSMonkys.selectLoginRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="select", Namespace="http://WSBar/", Order=0)]
+        public Punto_de_ventas.WSMonkys.selectRequestBody Body;
         
-        public selectLoginRequest() {
+        public selectRequest() {
         }
         
-        public selectLoginRequest(Punto_de_ventas.WSMonkys.selectLoginRequestBody Body) {
+        public selectRequest(Punto_de_ventas.WSMonkys.selectRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -289,15 +289,15 @@ namespace Punto_de_ventas.WSMonkys {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class selectLoginRequestBody {
+    public partial class selectRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string strCondicion;
         
-        public selectLoginRequestBody() {
+        public selectRequestBody() {
         }
         
-        public selectLoginRequestBody(string strCondicion) {
+        public selectRequestBody(string strCondicion) {
             this.strCondicion = strCondicion;
         }
     }
@@ -306,15 +306,15 @@ namespace Punto_de_ventas.WSMonkys {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class selectLoginResponse {
+    public partial class selectResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="selectLoginResponse", Namespace="http://WSBar/", Order=0)]
-        public Punto_de_ventas.WSMonkys.selectLoginResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="selectResponse", Namespace="http://WSBar/", Order=0)]
+        public Punto_de_ventas.WSMonkys.selectResponseBody Body;
         
-        public selectLoginResponse() {
+        public selectResponse() {
         }
         
-        public selectLoginResponse(Punto_de_ventas.WSMonkys.selectLoginResponseBody Body) {
+        public selectResponse(Punto_de_ventas.WSMonkys.selectResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -323,15 +323,15 @@ namespace Punto_de_ventas.WSMonkys {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class selectLoginResponseBody {
+    public partial class selectResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string @return;
         
-        public selectLoginResponseBody() {
+        public selectResponseBody() {
         }
         
-        public selectLoginResponseBody(string @return) {
+        public selectResponseBody(string @return) {
             this.@return = @return;
         }
     }
@@ -449,28 +449,28 @@ namespace Punto_de_ventas.WSMonkys {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Punto_de_ventas.WSMonkys.selectLoginResponse Punto_de_ventas.WSMonkys.WSBar.selectLogin(Punto_de_ventas.WSMonkys.selectLoginRequest request) {
-            return base.Channel.selectLogin(request);
+        Punto_de_ventas.WSMonkys.selectResponse Punto_de_ventas.WSMonkys.WSBar.select(Punto_de_ventas.WSMonkys.selectRequest request) {
+            return base.Channel.select(request);
         }
         
-        public string selectLogin(string strCondicion) {
-            Punto_de_ventas.WSMonkys.selectLoginRequest inValue = new Punto_de_ventas.WSMonkys.selectLoginRequest();
-            inValue.Body = new Punto_de_ventas.WSMonkys.selectLoginRequestBody();
+        public string select(string strCondicion) {
+            Punto_de_ventas.WSMonkys.selectRequest inValue = new Punto_de_ventas.WSMonkys.selectRequest();
+            inValue.Body = new Punto_de_ventas.WSMonkys.selectRequestBody();
             inValue.Body.strCondicion = strCondicion;
-            Punto_de_ventas.WSMonkys.selectLoginResponse retVal = ((Punto_de_ventas.WSMonkys.WSBar)(this)).selectLogin(inValue);
+            Punto_de_ventas.WSMonkys.selectResponse retVal = ((Punto_de_ventas.WSMonkys.WSBar)(this)).select(inValue);
             return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectLoginResponse> Punto_de_ventas.WSMonkys.WSBar.selectLoginAsync(Punto_de_ventas.WSMonkys.selectLoginRequest request) {
-            return base.Channel.selectLoginAsync(request);
+        System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectResponse> Punto_de_ventas.WSMonkys.WSBar.selectAsync(Punto_de_ventas.WSMonkys.selectRequest request) {
+            return base.Channel.selectAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectLoginResponse> selectLoginAsync(string strCondicion) {
-            Punto_de_ventas.WSMonkys.selectLoginRequest inValue = new Punto_de_ventas.WSMonkys.selectLoginRequest();
-            inValue.Body = new Punto_de_ventas.WSMonkys.selectLoginRequestBody();
+        public System.Threading.Tasks.Task<Punto_de_ventas.WSMonkys.selectResponse> selectAsync(string strCondicion) {
+            Punto_de_ventas.WSMonkys.selectRequest inValue = new Punto_de_ventas.WSMonkys.selectRequest();
+            inValue.Body = new Punto_de_ventas.WSMonkys.selectRequestBody();
             inValue.Body.strCondicion = strCondicion;
-            return ((Punto_de_ventas.WSMonkys.WSBar)(this)).selectLoginAsync(inValue);
+            return ((Punto_de_ventas.WSMonkys.WSBar)(this)).selectAsync(inValue);
         }
     }
 }
