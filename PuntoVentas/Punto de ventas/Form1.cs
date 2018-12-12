@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Punto_de_ventas.ModelsClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Punto_de_ventas
 {
     public partial class Form1 : Form
     {
+        TextBoxEvent evento = new TextBoxEvent();
         private string paginas = "4", accion = "insert", deudaActual, pago, dia, fecha; 
         public Form1()
         {
@@ -114,12 +116,17 @@ namespace Punto_de_ventas
 
         private void textBox_Id_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            evento.numberKeyPress(e);
         }
 
         private void textBox_Nombre_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void textBox_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            evento.textKeyPress(e);
         }
 
         private void textBox_Apellido_TextChanged(object sender, EventArgs e)
@@ -129,7 +136,7 @@ namespace Punto_de_ventas
 
         private void textBox_Apellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            evento.textKeyPress(e);
         }
 
         private void textBox_Direccion_TextChanged(object sender, EventArgs e)
@@ -139,7 +146,7 @@ namespace Punto_de_ventas
 
         private void textBox_Direccion_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+             
         }
 
         private void textBox_Telefono_TextChanged(object sender, EventArgs e)
@@ -149,7 +156,7 @@ namespace Punto_de_ventas
 
         private void textBox_Telefono_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            evento.numberKeyPress(e);
         }
 
         private void textBox_PagoscCliente_TextChanged(object sender, EventArgs e)
@@ -159,7 +166,7 @@ namespace Punto_de_ventas
 
         private void textBox_PagoscCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            evento.numberDecimalKeyPress(textBox_PagoscCliente,e);
         }
         #endregion
     }
