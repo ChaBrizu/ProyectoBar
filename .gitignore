@@ -267,3 +267,5 @@ __pycache__/
 /WSMonkysREST/build/
 /WSMonkysREST/dist/
 /WSBarLogin/nbproject/private/
+/WSBarLogin/build/
+/WSBarLogin/dist/
