@@ -18,7 +18,7 @@ public abstract class InterfazBD {
     protected Conexion conexion;
     
     public InterfazBD() {
-            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/prueba_bar", "root");
+            conexion = new Conexion("com.mysql.jdbc.Driver", "", "jdbc:mysql://localhost/bar_monkys", "root");
     }
     
     public abstract String consultaBd();
