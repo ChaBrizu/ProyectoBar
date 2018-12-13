@@ -31,7 +31,6 @@ public class ApplicationConfig extends Application {
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(MonkysBar.service.ClientesFacadeREST.class);
         resources.add(MonkysBar.service.ProductosFacadeREST.class);
-        resources.add(MonkysBar.service.UsuarioFacadeREST.class);
     }
     
 }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="kyK1WldkYIzpO/oVACVUnAB+JsA=">
+=======
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="PSkP0RZ7xRabn0b0XEL9XxxIy4w=">
+>>>>>>> b6e2a7cb37e88ffcaf0ff3fabbb3441ed4991f88
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="WSBarPortBinding">
       <properties>
@@ -112,10 +116,17 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
+<<<<<<< HEAD
     <endpoint name="WSBarPort" contract="WSMonkys.WSBar" bindingType="basicHttpBinding" address="http://192.168.43.113:8080/WSBarLogin/WSBar" bindingConfiguration="WSBarPortBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://192.168.43.113:8080/WSBarLogin/WSBar</serializedValue>
+=======
+    <endpoint name="WSBarPort" contract="WSMonkys.WSBar" bindingType="basicHttpBinding" address="http://desktop-sbe2f8s:8080/WSBarLogin/WSBar" bindingConfiguration="WSBarPortBinding">
+      <properties>
+        <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>http://desktop-sbe2f8s:8080/WSBarLogin/WSBar</serializedValue>
+>>>>>>> b6e2a7cb37e88ffcaf0ff3fabbb3441ed4991f88
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

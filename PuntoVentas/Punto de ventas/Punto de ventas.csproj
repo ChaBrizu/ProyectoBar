@@ -113,7 +113,7 @@
     <None Include="Connected Services\WSMonkys\Punto_de_ventas.WSMonkys.insertResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSMonkys\Punto_de_ventas.WSMonkys.selectLoginResponse.datasource">
+    <None Include="Connected Services\WSMonkys\Punto_de_ventas.WSMonkys.selectResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSMonkys\Punto_de_ventas.WSMonkys.updateResponse.datasource">

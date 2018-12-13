@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package BaseDeDatos;
 
 import java.sql.SQLException;
@@ -7,7 +12,8 @@ import java.sql.SQLException;
  * @author Carlos
  */
 public class InsertBD extends InterfazBD{
-    public InsertBD(String strDatos){
+    public InsertBD(String strTabla, String strDatos){
+        setTabla(strTabla);
         setDatos(strDatos);
     }
     
@@ -15,11 +21,13 @@ public class InsertBD extends InterfazBD{
     public String consultaBd(){
         int i;
         String resultado;
+        
+        String tabla=getTabla();
         String datos=getDatos();
         try {
                 executer = conexion.ObtenerConexion().createStatement();
-                dataSet = executer.executeQuery("SELECT * FROM `usuario` LIMIT 1");
-                sqlQuery = "INSERT INTO `usuario` (";
+                dataSet = executer.executeQuery("SELECT * FROM " + tabla + " LIMIT 1");
+                sqlQuery = "INSERT INTO " + tabla + " (";
                 for(i = 1;i<=dataSet.getMetaData().getColumnCount()-1;i++)
                 {
                      sqlQuery = sqlQuery + dataSet.getMetaData().getColumnName(i) + ",";
@@ -43,3 +51,4 @@ public class InsertBD extends InterfazBD{
         return resultado;
     }
 }
+

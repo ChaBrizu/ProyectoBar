@@ -12,18 +12,21 @@ import java.sql.SQLException;
  * @author Carlos
  */
 public class DeleteBD extends InterfazBD{
-    public DeleteBD(String strCondicion){
+    public DeleteBD(String strTabla, String strCondicion){
+        setTabla(strTabla);
         setCondicion(strCondicion);
     }
     
     @Override
     public String consultaBd(){
         String resultado;
+        
+        String tabla=getTabla();
         String condicion=getCondicion();
         
         try {
             executer = conexion.ObtenerConexion().createStatement();
-            sqlQuery = "DELETE FROM `usuario` WHERE " + condicion;
+            sqlQuery = "DELETE FROM " + tabla + " WHERE " + condicion;
             executer.executeUpdate(sqlQuery);
             resultado =  "Datos borrados exitosamente.";
         }

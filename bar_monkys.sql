@@ -1,20 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 26-11-2018 a las 17:48:21
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 12-12-2018 a las 22:57:24
+-- Versión del servidor: 5.7.21
+-- Versión de PHP: 5.6.35
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `bar_monkys`
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `clientes`
 --
 
+DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE IF NOT EXISTS `clientes` (
   `id_cliente` int(10) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(15) NOT NULL,
@@ -34,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `telefono` varchar(20) NOT NULL,
   `deuda` float NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `clientes`
@@ -49,6 +52,7 @@ INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido`, `direccion`, `telefo
 -- Estructura de tabla para la tabla `productos`
 --
 
+DROP TABLE IF EXISTS `productos`;
 CREATE TABLE IF NOT EXISTS `productos` (
   `id_producto` int(10) NOT NULL AUTO_INCREMENT,
   `nom_producto` varchar(30) NOT NULL,
@@ -56,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `precio` float NOT NULL,
   `descripcion` varchar(50) NOT NULL,
   PRIMARY KEY (`id_producto`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=123410 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -81,20 +85,23 @@ INSERT INTO `productos` (`id_producto`, `nom_producto`, `cantidad`, `precio`, `d
 -- Estructura de tabla para la tabla `usuario`
 --
 
+DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `id_user` int(10) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(20) NOT NULL,
-  `contraseña` varchar(20) NOT NULL,
+  `nombre` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `password` varchar(20) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id_user`, `nombre`, `contraseña`) VALUES
-(1, 'Emmanuel', '12345'),
-(2, 'Carlos', '1234');
+INSERT INTO `usuario` (`id_user`, `nombre`, `password`) VALUES
+(1, 'Carlos', '1234'),
+(3, 'ADMIN', '12345'),
+(4, 'CARLOS', '12345');
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

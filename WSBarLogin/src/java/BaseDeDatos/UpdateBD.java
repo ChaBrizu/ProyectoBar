@@ -12,7 +12,8 @@ import java.sql.SQLException;
  * @author Carlos
  */
 public class UpdateBD extends InterfazBD{
-    public UpdateBD(String strDatos, String strCondicion){
+    public UpdateBD(String strTabla, String strDatos, String strCondicion){
+        setTabla(strTabla);
         setDatos(strDatos);
         setCondicion(strCondicion);
     }
@@ -20,12 +21,14 @@ public class UpdateBD extends InterfazBD{
     @Override
     public String consultaBd(){
         String resultado;
+        
+        String tabla=getTabla();
         String datos=getDatos();
         String condicion=getCondicion();
         
         try {
                 executer = conexion.ObtenerConexion().createStatement();
-                sqlQuery = "UPDATE `usuario` SET " + datos + " WHERE " + condicion + " LIMIT 1";
+                sqlQuery = "UPDATE " + tabla + " SET " + datos + " WHERE " + condicion + " LIMIT 1";
                 executer.executeUpdate(sqlQuery);
                 resultado =  "Las modificaciones fueron ejecutadas correctamente.";
         }

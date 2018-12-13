@@ -5,6 +5,10 @@
     <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;WSBarPortBinding&quot; /&gt;" bindingType="basicHttpBinding" name="WSBarPortBinding" />
   </bindings>
   <endpoints>
+<<<<<<< HEAD
     <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://192.168.43.113:8080/WSBarLogin/WSBar&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;WSBarPortBinding&quot; contract=&quot;WSMonkys.WSBar&quot; name=&quot;WSBarPort&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://192.168.43.113:8080/WSBarLogin/WSBar&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;WSBarPortBinding&quot; contract=&quot;WSMonkys.WSBar&quot; name=&quot;WSBarPort&quot; /&gt;" contractName="WSMonkys.WSBar" name="WSBarPort" />
+=======
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://desktop-sbe2f8s:8080/WSBarLogin/WSBar&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;WSBarPortBinding&quot; contract=&quot;WSMonkys.WSBar&quot; name=&quot;WSBarPort&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://desktop-sbe2f8s:8080/WSBarLogin/WSBar&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;WSBarPortBinding&quot; contract=&quot;WSMonkys.WSBar&quot; name=&quot;WSBarPort&quot; /&gt;" contractName="WSMonkys.WSBar" name="WSBarPort" />
+>>>>>>> b6e2a7cb37e88ffcaf0ff3fabbb3441ed4991f88
   </endpoints>
 </configurationSnapshot>
