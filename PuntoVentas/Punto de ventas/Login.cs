@@ -20,7 +20,22 @@ namespace Punto_de_ventas
         private void button_BuscarProducto_Click(object sender, EventArgs e)
         {
             try
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {
+                //ServiceReference1.selectLoginRequest servicio = new ServiceReference1.selectLoginRequest();
                 WSMonkys.WSBarClient servicio = new WSMonkys.WSBarClient();
                 String usuario = tbx_usuario.Text;
                 String pass = tbx_pass.Text;                

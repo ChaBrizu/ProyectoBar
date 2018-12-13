@@ -39,7 +39,7 @@ namespace Punto_de_ventas.ModelsClass
             {
                 e.Handled = false;
             }
-            if (char.IsDigit(e.KeyChar))
+            if (char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
